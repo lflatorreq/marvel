@@ -8,8 +8,7 @@
 
     <h1>Películas de Marvel</h1>
 
-    <img src="avengers.webp" alt="Logo de Marvel o póster de películas" width="400">
-
+    <img src="marvel.webp" alt="Logo de Marvel o póster de películas" width="400">
 
     <ul>
         <li>Fase 1</li>
@@ -46,6 +45,74 @@
     
     <h3>Infinity War (2018)</h3>
     <p>Dirigida por Anthony y Joe Russo, protagonizada por el elenco de todo marvel.</p>
+
+    <hr>
+
+    <h2>Personajes</h2>
+
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+        </tr>
+        <tr>
+            <td>Iron Man</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Capitán América</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Thor</td>
+            <td>40</td>
+        </tr>
+    </table>
+
+    <h2>Suscríbete</h2>
+
+    <form action="/procesar-formulario" method="post">
+        
+        <p>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+        </p>
+
+        <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Ingrese su email" required>
+        </p>
+
+        <p>
+            <label for="edad">Edad:</label><br>
+            <input type="number" id="edad" name="edad" min="18" max="99" required>
+        </p>
+
+        <p>
+            <label for="pais">País:</label><br>
+            <select id="pais" name="pais" required>
+                <option value="">Seleccione su país</option>
+                <option value="1">Argentina</option>
+                <option value="2">Brasil</option>
+                <option value="3">México</option>
+            </select>
+        </p>
+
+        <p>
+            <label>Género:</label><br>
+            <input type="radio" id="genero-m" name="genero" value="masculino" required>
+            <label for="genero-m">Masculino</label>
+            
+            <input type="radio" id="genero-f" name="genero" value="femenino" required>
+            <label for="genero-f">Femenino</label>
+        </p>
+
+        <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+        </p>
+        
+    </form>
 
 </body>
 </html>
